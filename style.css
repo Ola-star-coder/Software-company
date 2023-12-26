@@ -19,6 +19,7 @@ body {
     --color2: white;
     --company: #435585;
     --shadow: #3081D0;
+    --span: #5b446a;
 }
 
 nav {
@@ -28,6 +29,9 @@ nav {
     padding: 20px 10%;
     background: var(--color);
     color: var(--color2);
+    border-radius: 50px;
+    margin-top: 10px;
+    position: sticky;
 }
 
 nav .logo {
@@ -72,7 +76,7 @@ nav li a:hover {
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 100vh;
+    height: auto;
     overflow-x: hidden;
 }
 
@@ -81,7 +85,6 @@ nav li a:hover {
     right: 0;
     bottom: 0;
     z-index: -1;
-    background: linear-gradient(black, #201e1e);
 }
 
 @media screen and (min-aspect-ratio:16/9) {
@@ -96,4 +99,122 @@ nav li a:hover {
         width: auto;
         height: 100%;
     }
+}
+
+.hero-place {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: var(--color2);
+    margin-top: 60px;
+    gap: 70px;
+}
+
+.hero-text {
+    margin-left: 40px;
+}
+
+.hero-text h1 {
+    font-size: 110px;
+}
+
+.hero-img img {
+    margin-top: 10px;
+    width: 60%;
+}
+
+span {
+    background: linear-gradient(#220e24, #342056);
+    color: #3081D0;
+}
+
+#ChooseUs {
+    margin-top: 50px;
+}
+
+.head h2 {
+    text-align: center;
+    margin-top: 40px;
+    color: #5b446a;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.head h3 {
+    text-align: center;
+    color: rgb(81, 82, 82);
+    margin-top: -40px;
+}
+
+.choose {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.choose-img img {
+    width: 100%;
+    margin-left: 10px;
+}
+
+.choose-text {
+    text-align: left;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.choose-text h2 {
+    color: #3081D0;
+    font-size: 40px;
+}
+
+.choose-text h3 {
+    font-size: 20px;
+    margin: 20px 0px;
+    color: rgb(81, 82, 82);
+}
+
+.choose-text p {
+    margin: 20px 0px;
+    color: rgb(102, 100, 100);
+}
+
+.video-book {
+    width: 97%;
+    margin-top: 30px;
+    margin-left: 1rem;
+    border-radius: 10px;
+}
+
+#responsive {
+    margin-top: 20px;
+    background: var(--other);
+}
+
+.responsive {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.responsive-img img {
+    width: 100%;
+    margin-left: -20px;
+    margin-top: 20px;
+}
+
+.responsive-text {
+    margin-top: 60px;
+}
+
+.responsive-text h3 {
+    color: #3081D0;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.responsive-text ul li {
+    color: rgb(102, 100, 100);
+    font-size: 16px;
+    margin-bottom: 10px;
+    list-style: georgian;
 }
