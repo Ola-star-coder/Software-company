@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--background);
+}
+
+:root {
+    --background: #EAECCC;
+    --other: #F3EEEA;
+    --color: black;
+    --color2: white;
+    --company: #435585;
+    --shadow: #3081D0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+    background: var(--color);
+    color: var(--color2);
+}
+
+nav .logo {
+    background: none;
+    color: var(--color2);
+    font-size: 47px;
+    text-decoration: none;
+    font-family: 'Sevillana', cursive;
+    transition: 1s;
+}
+
+nav .logo:hover {
+    text-decoration: underline;
+    transition: .5s;
+}
+
+nav ul li {
+    background: none;
+    color: var(--color2);
+    list-style: none;
+    font-size: 27px;
+}
+
+nav li a {
+    border: 1px solid var(--color2);
+    background: var(--color2);
+    color: var(--color);
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    padding: 10px 10px;
+    border-radius: 50px;
+    transition: 1s;
+}
+
+nav li a:hover {
+    box-shadow: 1px 4px 10px 3px var(--shadow);
+    transition: .5s;
+}
+
+#hero {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background: linear-gradient(black, #201e1e);
+}
+
+@media screen and (min-aspect-ratio:16/9) {
+    .video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-aspect-ratio:16/9) {
+    .video {
+        width: auto;
+        height: 100%;
+    }
+}
